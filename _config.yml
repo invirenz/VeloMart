@@ -1,14 +1,29 @@
-title: VeloMart
+# Site Info
+title: "VeloMart"
 description: "Your One-Stop Shop for Home & Lifestyle Essentials"
-theme: minima  # Or another Jekyll theme
-baseurl: ""  # Change this if using a subdirectory
-url: "https://invirenz.github.io/VeloMart/"  # Update with your actual GitHub Pages URL
+theme: minima  # You can change this to another Jekyll theme
+baseurl: ""  # Leave blank if deploying to the root of GitHub Pages
+url: "https://invirenz.github.io/VeloMart/"  # Ensure this matches your GitHub Pages URL
 
-# Author & Socials (Optional)
+# Author & Social Links
 author: "Michael Joshua Kinsey"
 github_username: "invirenz"
 
-# Build Settings
+# SEO & Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap  # Improves SEO by generating a sitemap
+  - jekyll-paginate  # Helps with pagination if needed
+
+# Markdown & Formatting
+markdown: kramdown
+highlighter: rouge  # Syntax highlighting for code blocks
+
+# Exclude files from Jekyll build (helps with performance)
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
