@@ -1,21 +1,14 @@
 title: VeloMart
-description: Your One-Stop Shop for Home & Lifestyle Essentials!
-theme: jekyll-theme-midnight  # jekyll-theme-midnight
+description: "Your One-Stop Shop for Home & Lifestyle Essentials"
+theme: minima  # Or another Jekyll theme
+baseurl: ""  # Change this if using a subdirectory
+url: "https://invirenz.github.io/VeloMart/"  # Update with your actual GitHub Pages URL
 
-body {
-    background-color: #000000; /* Black */
-    color: #FFD700; /* Gold */
-}
+# Author & Socials (Optional)
+author: "Michael Joshua Kinsey"
+github_username: "invirenz"
 
-h1, h2, h3, h4 {
-    color: #FFD700; /* Gold */
-}
-
-.btn {
-    background-color: #FFD700; /* Gold */
-    color: #000000; /* Black text */
-}
-
-.btn:hover {
-    background-color: #DAA520; /* Darker gold */
-}
+# Build Settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
