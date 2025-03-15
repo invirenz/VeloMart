@@ -1,1 +1,85 @@
+/* VeloMart Black & Gold Theme */
+body {
+    background-color: #000000; /* Black */
+    color: #FFD700; /* Gold */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    color: #FFD700; /* Gold */
+}
+
+a {
+    color: #FFD700; /* Gold */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #DAA520; /* Dark Gold */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #111111; /* Darker Black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); /* Gold Glow */
+}
+
+.product {
+    background: #222222; /* Dark Gray */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #FFD700; /* Gold */
+    color: #000000; /* Black */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #DAA520; /* Darker Gold */
+}
+
+.email-signup {
+    background: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+input[type="email"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background: #000000;
+    color: #FFD700;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    background: #FFD700;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+    background: #DAA520;
+}
 
