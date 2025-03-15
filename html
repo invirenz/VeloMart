@@ -23,19 +23,19 @@
         <div class="product">
             <h2>Modern Minimalist Sofa</h2>
             <p>Stylish, comfortable, and perfect for any living space.</p>
-            <a href="https://amzn.to/41KgaCo" target="_blank" class="btn">Shop on Amazon</a>
+            <a href="https://amzn.to/4iTQiLm" target="_blank" class="btn">Shop on Amazon</a>
         </div>
 
         <div class="product">
             <h2>LED Smart Home Lighting Kit</h2>
             <p>Transform your home with customizable LED lights.</p>
-            <a href="https://amzn.to/4iborGE" target="_blank" class="btn">Shop on Amazon</a>
+            <a href="https://amzn.to/4i6yJb5" target="_blank" class="btn">Shop on Amazon</a>
         </div>
 
         <div class="product">
             <h2>6-Piece Gardening Tool Set</h2>
             <p>Durable and ergonomic tools for all your gardening needs.</p>
-            <a href="https://amzn.to/41sIv05" target="_blank" class="btn">Shop on Amazon</a>
+            <a href="https://amzn.to/4ixHzyy" target="_blank" class="btn">Shop on Amazon</a>
         </div>
 
         <!-- Email Sign-Up Form -->
@@ -48,7 +48,7 @@
             </form>
         </div>
 
-        <p><em>Disclaimer: As an Amazon Associate, I earn from qualifying purchases.</em></p>
+        <p class="disclaimer"><em>Disclaimer: As an Amazon Associate, I earn from qualifying purchases.</em></p>
     </div>
 
     <!-- JavaScript for Live Date & Time -->
@@ -64,7 +64,7 @@
                 minute: '2-digit', 
                 second: '2-digit' 
             };
-            document.getElementById("datetime").innerHTML = now.toLocaleDateString("en-US", options);
+            document.getElementById("datetime").textContent = now.toLocaleDateString("en-US", options);
         }
         setInterval(updateDateTime, 1000);
         updateDateTime();
