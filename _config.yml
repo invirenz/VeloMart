@@ -1,1 +1,21 @@
+title: VeloMart
+description: Your One-Stop Shop for Home & Lifestyle Essentials!
+theme: jekyll-theme-midnight  # jekyll-theme-midnight
 
+body {
+    background-color: #000000; /* Black */
+    color: #FFD700; /* Gold */
+}
+
+h1, h2, h3, h4 {
+    color: #FFD700; /* Gold */
+}
+
+.btn {
+    background-color: #FFD700; /* Gold */
+    color: #000000; /* Black text */
+}
+
+.btn:hover {
+    background-color: #DAA520; /* Darker gold */
+}
