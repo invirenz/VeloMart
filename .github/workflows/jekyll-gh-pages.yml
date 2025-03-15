@@ -1,44 +1,41 @@
-# 🚀 GitHub Actions Workflow for Deploying a Jekyll Site to GitHub Pages
-
+# Deploy Jekyll with GitHub Pages
 name: Deploy Jekyll with GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Runs when pushing to the 'main' branch
-  workflow_dispatch:    # Allows manual deployment from the Actions tab
+    branches:
+      - main  # Ensure this is the correct branch for GitHub Pages
 
-# Set permissions for GitHub Pages deployment
+  workflow_dispatch:  # Allows manual triggering from Actions tab
+
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, but do not cancel in-progress runs
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # 🔹 Build Job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Build Jekyll Site
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./        # Source directory of your Jekyll project
-          destination: ./_site  # Output directory for generated files
+          source: ./
+          destination: ./_site
 
-      - name: Upload Build Artifacts
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
 
-  # 🔹 Deployment Job
   deploy:
     environment:
       name: github-pages
