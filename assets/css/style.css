@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+/* Header Styles */
 header {
     background-color: #000;
     color: #ffd700;  /* Gold */
@@ -19,6 +20,7 @@ header {
     text-transform: uppercase;
 }
 
+/* Navigation Styles */
 nav {
     background-color: #000;
     color: #ffd700;  /* Gold */
@@ -42,6 +44,7 @@ nav ul li a {
     font-size: 16px;
 }
 
+/* Hero Section Styles */
 .hero {
     padding: 50px;
     background-color: #000;
@@ -57,6 +60,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Footer Styles */
 footer {
     background-color: #000;
     color: #ffd700;
@@ -66,16 +70,20 @@ footer {
 
 /* Button Styles */
 .btn {
-    background-color: #ffd700;
-    color: #000;
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #ffd700; /* Gold */
+    color: #000; /* Black text */
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #e6c300;
+    background-color: #e6c300; /* Darker gold on hover */
 }
 
 /* Logo Styles */
@@ -87,7 +95,7 @@ footer {
     width: 100px;
 }
 
-/* Section for Offers, About, Services, etc. */
+/* Section Styles for Offers, About, Services, etc. */
 section {
     padding: 40px;
     text-align: center;
@@ -120,6 +128,15 @@ section p {
     }
 
     .hero p {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 80px; /* Adjust logo size for mobile */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Smaller button on mobile */
         font-size: 14px;
     }
 }
