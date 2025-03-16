@@ -1,86 +1,67 @@
-/* VeloMart Black & Gold Theme */
+/* General Styles */
 body {
-    background-color: #000000; /* Black */
-    color: #FFD700; /* Gold */
     font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Gold text */
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-h1, h2, h3, h4 {
-    color: #FFD700; /* Gold */
-}
-
-a {
-    color: #FFD700; /* Gold */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #DAA520; /* Dark Gold */
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: #111111; /* Darker Black */
+/* Header */
+header {
+    background-color: #111; /* Darker black for contrast */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.3); /* Gold Glow */
 }
 
-.product {
-    background: #222222; /* Dark Gray */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-    padding: 15px;
-    margin: 20px 0;
+header h1 {
+    color: #FFD700; /* Gold */
 }
 
-.btn {
-    background-color: #FFD700; /* Gold */
-    color: #000000; /* Black */
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #FFD700; /* Gold */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Buttons */
+.btn {
     display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #DAA520; /* Darker Gold */
+    background-color: #ffcc00;
 }
 
-.email-signup {
-    background: #222222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-}
-
-input[type="email"] {
-    padding: 10px;
-    width: 60%;
-    border-radius: 5px;
-    border: 1px solid #FFD700;
-    background: #000000;
+/* Footer */
+footer {
+    background-color: #111;
     color: #FFD700;
-    font-size: 16px;
+    padding: 15px;
 }
-
-.subscribe-btn {
-    background: #FFD700;
-    color: #000000;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.subscribe-btn:hover {
-    background: #DAA520;
-}
-
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
