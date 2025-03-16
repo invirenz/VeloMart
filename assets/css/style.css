@@ -1,26 +1,28 @@
-/* General Styles */
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #FFD700; /* Gold text */
+    background-color: #f4f4f4;
+    color: #fff;
     margin: 0;
-    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #ffd700;  /* Gold */
+    padding: 20px;
     text-align: center;
 }
 
-/* Header */
-header {
-    background-color: #111; /* Darker black for contrast */
-    padding: 20px;
+.hero-header {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-header h1 {
-    color: #FFD700; /* Gold */
-}
-
-/* Navigation Bar */
 nav {
-    background-color: #222;
+    background-color: #000;
+    color: #ffd700;  /* Gold */
+    text-align: center;
     padding: 10px;
 }
 
@@ -31,37 +33,93 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
+    color: #ffd700;
     text-decoration: none;
-    color: #FFD700; /* Gold */
-    font-weight: bold;
+    font-size: 16px;
 }
 
-nav ul li a:hover {
-    color: white;
+.hero {
+    padding: 50px;
+    background-color: #000;
+    color: #ffd700;
+    text-align: center;
 }
 
-/* Buttons */
+.hero h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #000;
+    color: #ffd700;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button Styles */
 .btn {
-    display: inline-block;
-    background-color: #FFD700;
-    color: black;
-    padding: 10px 15px;
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #ffcc00;
+    background-color: #e6c300;
 }
 
-/* Footer */
-footer {
-    background-color: #111;
-    color: #FFD700;
-    padding: 15px;
+/* Logo Styles */
+.logo-container {
+    display: inline-block;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Section for Offers, About, Services, etc. */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+section h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-header {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
 }
