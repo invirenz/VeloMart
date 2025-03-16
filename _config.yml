@@ -1,12 +1,12 @@
 # Site Info
 title: "VeloMart"
 description: "Your One-Stop Shop for Home & Lifestyle Essentials"
-theme: minima  # You can change this to another Jekyll theme
+theme: minima  # You can change this to another Jekyll theme if you prefer
 baseurl: ""  # Leave blank if deploying to the root of GitHub Pages
 url: "https://invirenz.github.io/VeloMart/"  # Ensure this matches your GitHub Pages URL
 
 # Author & Social Links
-author: "Michael Joshua Kinsey"
+author: "VeloMart"  # Changed author to VeloMart
 github_username: "invirenz"
 
 # SEO & Plugins
@@ -27,3 +27,16 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+# Custom Colors & Styles for VeloMart (To match your design preferences)
+theme:
+  primary_color: "#ffd700"  # Gold color for the theme
+  secondary_color: "#000000"  # Black color for text and backgrounds
+  button_hover_color: "#e6c300"  # Darker gold for button hover effects
+  text_color: "#ffffff"  # White text for contrast against dark backgrounds
+  background_color: "#f4f4f4"  # Light gray background for general sections
+  footer_color: "#ffd700"  # Gold color for the footer text
+
+# Additional Configuration (Optional, if you'd like to use other features)
+# paginate: 5  # If you want pagination, uncomment this line
+# paginate_path: "/page:num/"
